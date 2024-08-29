@@ -30,7 +30,19 @@ THEME - Operator Mono Theme(extension)
 
 1.create .ssh
 
-2.setuping git for cloning form the repository
+2.create a ssh key gen using with your email then
+
+ssh-keygen -t ed25519 -C "[your_email@example.com](mailto:your_email@example.com)" -f ~/.ssh/id_rsa_personal
+
+the above command will generate a ssh-keygen with id_rsa_personal this file name
+
+3.copy the pub file
+
+something like this:
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL4Wdtx7fuO2sAWU/JK7/W/hYS+a+pbfkMgfj1ryqDCh [your_email@example.com](mailto:your_email@example.com)
+
+4.setuping git for cloning form the repository
 
 ```markdown
 # Account 1
@@ -48,7 +60,7 @@ User git
 IdentityFile ~/.ssh/id_rsa_office
 ```
 
-[3.in](http://3.in) .gitconfig
+4.in .gitconfig
 
 ```
 [alias]
