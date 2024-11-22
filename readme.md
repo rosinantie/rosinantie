@@ -64,8 +64,8 @@ IdentityFile ~/.ssh/id_rsa_office
 
 ```
 [alias]
-	ci-personal = "!f() { git config user.name 'dilipgonadev'; git config user.email 'dilipgona.dev@gmail.com'; }; f"
-	ci-office = "!f() { git config user.name 'dilipannztech'; git config user.email 'dilip@annztech.com';}; f"
+	ci-personal = "!f() { git config user.name 'personal-name'; git config user.email 'personal-email'; }; f"
+	ci-office = "!f() { git config user.name 'office-nane'; git config user.email 'office-email';}; f"
 ```
 
 got to. command line and command git ci-personal to change the name and email
